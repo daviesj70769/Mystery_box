@@ -148,7 +148,7 @@ class GameStats:
     def close_stats(self, partner):
         # Put help button back to normal...
         partner.stats_button.config(state=NORMAL)
-        self.stats_box.destroy
+        self.stats_box.destroy()
 
     # main routine
 if __name__ == "__main__":
