@@ -3,6 +3,7 @@ from functools import partial  # To prevent unwanted windows
 import random
 import re
 
+
 class Start:
     def __init__(self, parent):
 
@@ -87,7 +88,7 @@ class Start:
                                         wrap=275, justify=LEFT, padx=10, pady=10)
         self.amount_error_label.grid(row=4)
 
-         # Help Button
+        # Help Button
         self.help_button = Button(self.start_frame, text="How/Rules",
                                   bg="#808080", fg="white", font=button_font, 
                                   padx=10, pady=10, command=self.help)
@@ -221,8 +222,8 @@ class Help:
         partner.help_button.config(state=NORMAL)
         self.help_box.destroy()
 
-class Game:
 
+class Game:
     def __init__(self, partner, stakes, starting_balance):
         print(stakes)
         print(starting_balance)
@@ -416,7 +417,7 @@ class Game:
         print("you asked for help")
         get_help = Help(self)
 
-        help_text="Choosean amount to play with and then choose the stakes. " \
+        help_text="Chosen amount to play with and then choose the stakes. " \
                   "Higher stakes cost more per round but you can win more as " \
                   "well.\n\n" \
                   "When you enter the play area, you will se three mystery " \
